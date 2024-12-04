@@ -8,23 +8,26 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
+      - name: checkout
         uses: actions/checkout@v3
 
-      - name: Set up Node.js
+      - name: setup-node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: '16'
 
-      - name: Install dependencies
+      - name: install-dependencies
         run: npm install
 
-      - name: Build project
+      - name: build
         run: npm run build
 
-      - name: Deploy to GitHub Pages
+      - name: deploy to github pages
         run: npm run deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
+
+
