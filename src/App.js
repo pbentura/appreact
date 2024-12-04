@@ -1,13 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 
-functon App() {
+function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Hello World Pinhas Bentura
+          Hello World | Pinhas Bentura
         </p>
         <a
           className="App-link"
