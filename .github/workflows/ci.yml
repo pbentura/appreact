@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  deployement:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
