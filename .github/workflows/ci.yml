@@ -6,13 +6,13 @@ on:
       - main
 
 jobs:
-  build:
+  deployement:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
         uses: actions/checkout@v3
 
-      - name: setup-node.js
+      - name: set-node.js
         uses: actions/setup-node@v3
         with:
           node-version: '16'
